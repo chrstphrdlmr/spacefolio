@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C D M</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="icon.png">
+
+
+
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="brand">C D M</div>
+        <nav class="header-nav">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+    <div class="astronaut" id="astronaut">
+      <img src="img/spaceman.png" alt="Astronaut" id="astronautImg">
+    </div>
+
+    <main class="content">
+      <section class="intro">
+        <div class="intro-image">
+          <img src="img/mee.jpg" alt="Profile image">
+        </div>
+        <div class="intro-text">
+          <h1>Christopher <br>Del Mar</h1>
+          <p>An aspiring UI/UX designer and web developer crafting seamless user experiences through thoughtful design and functional web development.</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup" id="about-popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h2>About</h2>
+        <p>Hi, I'm Christopher Del Mar, and this is a simple project of portfolio in space theme.</p>
+        <p>Take a look on everything here and Enjoy! :)</p>
+      </div>
+    </div>
+
+    <div class="popup" id="skills-popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, Web Development</p>
+      </div>
+    </div>
+
+    <div class="popup" id="projects-popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h2>Projects</h2>       
+          <p><a href="https://lustay-records.vercel.app/"  class="no-underline" style="color: white;" >Expenses Tracker</a> </p> 
+          <ul>
+            <li>Developed a responsive web application for tracking personal expenses</li>
+            <li>Implemented user authentication and data persistence</li>
+          </ul>
+          <p><a href="https://ask-8-ball.vercel.app/"  class="no-underline" style="color: white;" >Lucky 8-Ball</a> </p> 
+           <ul>
+            <li>Probleme deciding? This generate random answers. For entertainment only.</li>
+            <li>Shake your phone or tap the button to get an filipino answer phrases.</li>
+          </ul>
+          <p><a href="https://daily-to-do-mauve.vercel.app/"  class="no-underline" style="color: white;" >Daily To-Do</a> </p> 
+          <ul>
+            <li>Daily to do list tracker. </li>
+            <li>Login</li>
+          </ul>
+
+      </div>
+    </div>
+
+    <div class="popup" id="education-popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h2>Education</h2>
+        <p> Graduated in <br><b>Tarlac State University</b> 
+          <h4>Bachelor of Science in Computer Science</h4>
+          <h5> <i>Cum Laude</i> 2021 - 2025</h5>
+        </p>
+      </div>
+    </div>
+
+    <div class="popup" id="contact-popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h2>Contact</h2>
+        <p>Email: chrstphrdlmr@gmail.com </p>
+        <p>Facebook: <a href="https://www.facebook.com/christoperdelmar"  class="no-underline" style="color: white;" >Chrstphr DM</a>  </p> 
+        <p>Telegram: <a href="t.me/chrstphrdlmr"  class="no-underline" style="color: white;" >Kuristoferu </a>  </p> 
+
+
+      </div>
+    </div>
+<!-- Email Sent Popup 
+<form id="contact-form" class="contact-form">
+          <input type="text" id="from_name" placeholder="Your Name" required>
+          <input type="email" id="from_email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+          <div id="form-status"></div>
+        </form>
+
+
+    <div class="popup" id="email-sent-popup">
+      <div class="popup-content">
+        <div class="success-icon">✓</div>
+        <h2>Email Sent!</h2>
+        <p>Your message has been sent successfully.</p>
+        <button class="popup-close-btn">Close</button>
+      </div>
+    </div>
+-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
